@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote com Amor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div class="container container-flex">
+            <h1>Adote com Amor</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#pet">Pets para Adoção</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="sobre">
+        <div class="container container-flex">
+            <img src="./imagens/abrigo.jpg" alt="Abrigo de animais">
+            <div class="texto-com-pegada">
+                <h2>Sobre o Projeto</h2>
+                <p>O <strong>Adote com Amor</strong> é uma ONG que resgata animais abandonados e oferece cuidados essenciais, como alimentação, atendimento veterinário e castração.
+                    Nosso abrigo é um lugar seguro onde os pets recebem carinho e tratamento enquanto aguardam por uma nova família.
+                    Contamos com doações de ração e apoio veterinário para manter o bem-estar dos animais resgatados.</p>
+                <p>Nosso objetivo é encontrar lares responsáveis e amorosos para esses companheiros, promovendo a adoção consciente e transformadora.
+                    Adotar é um gesto de amor que muda vidas. Venha conhecer nossos animais e faça parte dessa missão de cuidado e respeito.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="carousel-imagens" class="carousel-wrapper">
+        <div class="slide">
+            <img src="./imagens/gatos-comendo.jpg" alt="Gatos comendo">
+            <div class="overlay">
+                <p>Adotar é um ato de amor!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./imagens/dog.jpg" alt="Cachorro recebendo carinho">
+            <div class="overlay">
+                <p>Cuidar faz bem!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./imagens/cachorro-brincando.jpg" alt="Cachorro brincando">
+            <div class="overlay">
+                <p>Seu novo melhor amigo pode estar aqui!</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="pet">
+        <div class="container">
+            <h2>Pets para Adoção</h2>
+            <ul class="container-flex lista-pets">
+                <li>
+                    <img src="./imagens/cao-amarelo.jpg" alt="Cão caramelo">
+                    <h3>Thor</h3>
+                    <p>Macho, 2 anos, vacinado e castrado.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/gata-preta-branca.jpg" alt="Gata preta e branca">
+                    <h3>Luna</h3>
+                    <p>Fêmea, 1 ano, muito carinhosa.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+                <li>
+                    <img src="./imagens/filhote.jpg" alt="Filhote">
+                    <h3>Mel</h3>
+                    <p>Fêmea, 5 meses, brincalhona.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+                <li>
+                    <img src="./imagens/gato-preto.jpg" alt="Gato preto">
+                    <h3>Salen</h3>
+                    <p>Macho, 7 meses, amigavel, castrado e um pouco tímido.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+                <li>
+                    <img src="./imagens/nina.jpg" alt="Cachorro adulto">
+                    <h3>Nina</h3>
+                    <p>Fêmea, 3 anos, porte grande, muito dócil e se dá bem com crianças.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+                <li>
+                    <img src="./imagens/tom.jpg" alt="Cachorro na grama">
+                    <h3>Tom</h3>
+                    <p>Macho, 8 meses e adora brincar com bolinhas.</p>
+                    <button type="button">Quero Adotar</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <form id="form-adocao">
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="pets">Pet de interesse:</label>
+                    <input type="text" id="pets" name="pets">
+                </div>
+                <div class="form-campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container container-flex">
+            <p>2025 &copy; Adote com Amor - Todos os direitos reservados</p>
+            <ul class="container-flex">
+                <li><a href="#"><img src="./icones/facebook.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="./icones/instagram.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="./icones/youtube.png" alt="Youtube"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
